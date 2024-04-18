@@ -78,7 +78,24 @@
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <CudaCompile Include="external\cudaCrop.cu" />
     <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="external\commandLine.h" />
+    <ClInclude Include="external\csvReader.h" />
+    <ClInclude Include="external\csvReader.hpp" />
+    <ClInclude Include="external\cudaCrop.h" />
+    <ClInclude Include="external\cudaUtility.h" />
+    <ClInclude Include="external\imageFormat.h" />
+    <ClInclude Include="external\logging.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="external\imageFormat.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="external\commandLine.cpp" />
+    <ClCompile Include="external\logging.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
