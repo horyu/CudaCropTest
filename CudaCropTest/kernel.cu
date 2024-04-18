@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+#include "imageIO.h"
 #include "cudaCrop.h"
 
 cudaError_t addWithCuda(int *c, const int *a, const int *b, unsigned int size);

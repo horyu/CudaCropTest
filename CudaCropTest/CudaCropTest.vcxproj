@@ -79,16 +79,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CudaCompile Include="external\cudaCrop.cu" />
+    <CudaCompile Include="external\cudaGrayscale.cu" />
+    <CudaCompile Include="external\cudaRGB.cu" />
+    <CudaCompile Include="external\cudaYUV-NV12.cu" />
+    <CudaCompile Include="external\cudaYUV-YUYV.cu" />
+    <CudaCompile Include="external\cudaYUV-YV12.cu" />
     <CudaCompile Include="kernel.cu" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="external\alphanum.h" />
     <ClInclude Include="external\commandLine.h" />
     <ClInclude Include="external\csvReader.h" />
     <ClInclude Include="external\csvReader.hpp" />
+    <ClInclude Include="external\cudaBayer.h" />
+    <ClInclude Include="external\cudaColorspace.h" />
     <ClInclude Include="external\cudaCrop.h" />
+    <ClInclude Include="external\cudaGrayscale.h" />
+    <ClInclude Include="external\cudaMappedMemory.h" />
+    <ClInclude Include="external\cudaMath.h" />
+    <ClInclude Include="external\cudaRGB.h" />
     <ClInclude Include="external\cudaUtility.h" />
+    <ClInclude Include="external\cudaVector.h" />
+    <ClInclude Include="external\cudaYUV.h" />
+    <ClInclude Include="external\filesystem.h" />
     <ClInclude Include="external\imageFormat.h" />
+    <ClInclude Include="external\imageIO.h" />
     <ClInclude Include="external\logging.h" />
+    <ClInclude Include="external\stb\stb_image.h" />
+    <ClInclude Include="external\stb\stb_image_resize.h" />
+    <ClInclude Include="external\stb\stb_image_write.h" />
     <ClInclude Include="external\strings.h" />
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +115,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="external\commandLine.cpp" />
+    <ClCompile Include="external\cudaBayer.cpp" />
+    <ClCompile Include="external\cudaColorspace.cpp" />
+    <ClCompile Include="external\filesystem.cpp" />
+    <ClCompile Include="external\imageIO.cpp" />
     <ClCompile Include="external\logging.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
