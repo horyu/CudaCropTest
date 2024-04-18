@@ -89,6 +89,7 @@
     <ClInclude Include="external\cudaUtility.h" />
     <ClInclude Include="external\imageFormat.h" />
     <ClInclude Include="external\logging.h" />
+    <ClInclude Include="external\strings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="external\imageFormat.inl" />
