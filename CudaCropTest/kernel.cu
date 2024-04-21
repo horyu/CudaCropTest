@@ -19,7 +19,7 @@ private:
 int main()
 {
 	const char* input_path = R"(C:\Users\owner\source\repos\CudaCropTest\CudaCropTest\images\sample-2000x1500.png)";
-	const char* output_oath = R"(C:\Users\owner\source\repos\CudaCropTest\CudaCropTest\images\test.png)";
+	const char* output_path = R"(C:\Users\owner\source\repos\CudaCropTest\CudaCropTest\images\test.png)";
 
 	uchar3* input_image = NULL;
 	uchar3* output_image = NULL;
@@ -43,6 +43,7 @@ int main()
 		return 1;
 	}
 
+	// Crop image
 	int4 roi = {
 		width / 4,
 		height / 3,
@@ -62,7 +63,7 @@ int main()
 	}
 
 	// Save image
-	if (!saveImage(output_oath, output_image, crop_width, crop_height)) {
+	if (!saveImage(output_path, output_image, crop_width, crop_height)) {
 		fprintf(stderr, "saveImage failed!");
 		return 1;
 	}
