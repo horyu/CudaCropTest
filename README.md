@@ -11,4 +11,4 @@
 - [dusty-nv/jetson-utils](https://github.com/dusty-nv/jetson-utils)
 
 このライブラリのファイルは `CudaCropTest\externals` フォルダに配置されています。
-ファイルに加えられた変更は、[`git log CudaCropTest\\external\\`](https://github.com/horyu/CudaCropTest/commits/master/CudaCropTest/external)をご参照ください。
+ファイルに加えられた変更は、[`git log CudaCropTest\external\`](https://github.com/horyu/CudaCropTest/commits/master/CudaCropTest/external)をご参照ください。
